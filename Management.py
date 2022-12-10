@@ -1,4 +1,8 @@
-from Doctor.py import Doctor
-from Facility.py import Facility
-from Laboratory.py import Laboratory
-from Patient.py import Patient
+=======
+#Importing the classes from the other files
+#This will act like a main file where everything will happen
+from Doctor.py import *
+from Facility.py import *
+from Laboratory.py import *
+from Patient.py import *
+
