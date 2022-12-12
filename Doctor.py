@@ -45,6 +45,10 @@ def writeListOfDoctorsToFile(input_list):
     #opens file for adding text
     f = open("doctors.txt", "a")
 
+    #writing the start of the doctor on the file 
+    f.write("id_name_specilist_timing_qualification_roomNb")
+    f.write("\n")
+
     #for all elements in the list 
     for i in range(1, len(input_list)):
         #formats the doctor object in the list
