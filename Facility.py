@@ -49,7 +49,10 @@ class Facility:
         faciltyfile.write(facilities_list)
         faciltyfile.close()
 
-
+"""
+Facility Menu
+Function: Allows for the user to use all the facility functions
+"""
 def facilitiesMenu():
 
     my_facility = Facility("na")
@@ -64,7 +67,10 @@ def facilitiesMenu():
 
         if facility_menu == 1:
             my_facility.displayFacilities()
+            print("Back to the previous Menu")
         if facility_menu == 2:
             my_facility.addFacility()
+            print("Back to the previous Menu")
         if facility_menu == 3:
             isRunning = False
+            print("Back to the previous Menu")

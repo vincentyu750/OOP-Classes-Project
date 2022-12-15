@@ -158,6 +158,10 @@ class Patient:
         patients_file.write('\n')
         patients_file.close()
 
+"""
+Patient Menu
+Function: Allows for the user to use all the patient functions
+"""
 def patientMenu():
 
     my_patient = Patient()

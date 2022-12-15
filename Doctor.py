@@ -263,20 +263,27 @@ def doctorMenu():
         #menu selection
         if choice == 1: 
             displayDoctorsList()
+            print("Back to the previous Menu")
 
         if choice == 2:
             searchDoctorById(listOfDoctors)
+            print("Back to the previous Menu")
+
         if choice == 3:
             searchDoctorByName(listOfDoctors)
+            print("Back to the previous Menu")
 
         if choice == 4:
             inputDoctor = enterDrInfo()
             addDrToFile(inputDoctor)
+            print("Back to the previous Menu")
 
         if choice == 5:
             editDoctorInfo(listOfDoctors)
             writeListOfDoctorsToFile(listOfDoctors)
+            print("Back to the previous Menu")
 
         if choice == 6:
             doctorMenuSelection = False
+            print("Back to the previous Menu")
 

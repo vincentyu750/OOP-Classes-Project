@@ -86,7 +86,10 @@ class Laboratory:
         labfile.close()
         return labs_list
 
-
+"""
+Laboratory Menu
+Function: Allows for the user to use all the laboratory functions
+"""
 def labMenu():
 
     my_lab = Laboratory("na",0)
@@ -101,7 +104,10 @@ def labMenu():
 
         if lab_menu == 1:
             my_lab.displaylabslist()
+            print("Back to the previous Menu")
         if lab_menu == 2:
             my_lab.addlabtofile()
+            print("Back to the previous Menu")
         if lab_menu == 3:
             isRunning = False
+            print("Back to the previous Menu")
