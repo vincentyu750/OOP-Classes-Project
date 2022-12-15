@@ -5,9 +5,11 @@ from Facility import *
 from Laboratory import *
 from Patient import *
 
+#main_menu function
 main_menu = True
 while main_menu == True:
 
+#asking for user input 
     main_menu_selection = int(input("""
 Welcome to Alberta Hospital (AH) Management system\n
 Select from the following options, or select 0 to stop:
@@ -33,9 +35,11 @@ Select from the following options, or select 0 to stop:
     if main_menu_selection == 4:
         patientMenu()
 
+    #if 0 is entered stops the while loop
     if main_menu_selection == 0: 
         main_menu = False
 
+    #if any other input is inputted continues the program 
     else:
         continue
 

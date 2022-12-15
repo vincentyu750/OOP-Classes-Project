@@ -27,7 +27,7 @@ class Laboratory:
     laboratories.txt
     """
     def writelistoflabstofile(self):
-        content = labhere.readlaboratoriesfile()
+        content = self.readlaboratoriesfile()
         labs_list = ('\n'.join(content))
         print(labs_list)
         labfile = open("laboratories.txt", "r+")
@@ -39,7 +39,7 @@ class Laboratory:
     Function: Displays the list of laboratories
     """
     def displaylabslist(self):
-        labs_list = labhere.readlaboratoriesfile()
+        labs_list = self.readlaboratoriesfile()
         print(labs_list)
 
     """
@@ -59,8 +59,8 @@ class Laboratory:
     def enterlaboratoryinfo(self):
         newlabname = input("What is the name of the lab that you would like to add?")
         newlabcost = input("what is the cost of this new lab?")
-        newlab = labhere.formatlabinfo(newlabname, newlabcost)
-        list = labhere.readlaboratoriesfile()
+        newlab = self.formatlabinfo(newlabname, newlabcost)
+        list = self.readlaboratoriesfile()
         list.append(newlab)
 
     """
@@ -73,4 +73,4 @@ class Laboratory:
         content = labfile.read()
         labs_list = content.split("\n")
         labfile.close()
-        return labs_lis
+        return labs_list
