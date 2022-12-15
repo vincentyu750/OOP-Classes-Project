@@ -12,7 +12,7 @@ class Facility:
     Function: Adds and writes the facility name to the file
     """
     def addFacility(self):
-        newfacilityname = self.facilityName
+        newfacilityname = input("Enter Facility name:\n\n")
         facilityfile = open("facilities.txt", "a+")
         facilityfile.write("\n" + newfacilityname)
         facilityfile.close()
@@ -34,7 +34,8 @@ class Facility:
     """
     def displayFacilities(self):
         facility_list = self.makeListOfFacilities()
-        print(facility_list)
+        for i in range(len(facility_list)):
+            print(facility_list[i]+"\n")
 
     """
     Write List of Facilities to File
@@ -47,3 +48,23 @@ class Facility:
         faciltyfile = open("facilities.txt", "r+")
         faciltyfile.write(facilities_list)
         faciltyfile.close()
+
+
+def facilitiesMenu():
+
+    my_facility = Facility("na")
+    isRunning = True
+
+    while isRunning:
+
+        #list of facilities
+        facility_list = my_facility.makeListOfFacilities
+
+        facility_menu = int(input("Facilities Menu:\n1 - Display Facilities list\n2 - Add Facility\n3 - Back to the Main Menu\n\n"))
+
+        if facility_menu == 1:
+            my_facility.displayFacilities()
+        if facility_menu == 2:
+            my_facility.addFacility()
+        if facility_menu == 3:
+            isRunning = False

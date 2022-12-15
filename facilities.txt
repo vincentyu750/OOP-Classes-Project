@@ -1,4 +1,4 @@
-Hospital  Facilities are:
+The Hospital  Facilities are:
 Ambulance
 Admissions 
 Canteen

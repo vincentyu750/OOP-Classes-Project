@@ -16,8 +16,7 @@ Select from the following options, or select 0 to stop:
 1 -\tDoctors
 2 -\tFacilities
 3 -\tLaboratories
-4 -\tPatients
-\n
+4 -\tPatients\n
 """))
     #if doctors is selected
     if main_menu_selection == 1:
@@ -29,7 +28,7 @@ Select from the following options, or select 0 to stop:
 
     #if Laboratories is selected
     if main_menu_selection == 3:
-        laboratoriesMenu()
+        labMenu()
 
     #if patient is selected
     if main_menu_selection == 4:
